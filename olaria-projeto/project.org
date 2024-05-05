@@ -1,0 +1,15 @@
+* Data Analysis for brick sales
+
+* Step by step
+
+1. Define a file to import and export data to. It will be a raw database kept in CSV format.
+2. Manipulate the CSV file, asking the user what he wants to do:
+   - read content.
+   - write content.
+   - visualize content.
+3. Define functions for:
+   - writing new data, asking for year and sales for each month.
+   - if possible, try to implement sales for two types of bricks: 'tijolinho' and 'oito furos'.
+   - append added content to the JSON file.
+   - convert JSON to CSV on the fly, so we can plot the data. *UPDATE*: trying to use CSV from the start, seems easier to append new data.
+   - ask the user which year he wants to visualize sales.
