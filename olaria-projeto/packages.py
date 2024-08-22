@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 def generate_sales_numbers():
     """Generate a list to process as sales for one year."""
-    sales = [random.randint(30_000, 100_000) for item in range(12)]
+    sales = [random.randint(30_000, 100_000) for i in range(12)]
     months = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez']
     yearly_sales = {}
     for month, sale in zip(months, sales):
@@ -23,6 +23,6 @@ def visualize_sales(yearly_sales):
 
 def display_sales_numbers(yearly_sales):
     """Display on terminal sales numbers for each month."""
-    print(f"A seguinte lista de vendas foi gerada:")
+    print("A seguinte lista de vendas foi gerada:")
     for month, sale in yearly_sales.items():
         print(f"{month}: {sale}")
